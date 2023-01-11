@@ -1,0 +1,11 @@
+img{
+    height: 320px;
+    margin-top: 500px;
+}
+a:hover{
+    cursor: pointer;
+}
+
+#nav{
+    transform: translate(-50%,0);
+}
