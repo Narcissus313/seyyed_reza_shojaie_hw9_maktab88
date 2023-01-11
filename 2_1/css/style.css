@@ -6,6 +6,9 @@ a:hover{
     cursor: pointer;
 }
 
-#nav{
-    transform: translate(-50%,0);
+#pagesUl{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    /* transform: translate(0,0); */
 }
