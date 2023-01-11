@@ -18,15 +18,15 @@ function formPreventFromRefresh(event) {
 }
 
 function userProfileModalCreator(data) {
-	const targetUser = user - data.find((user) => user.id == data);
+	const targetUser = users_data.find((user) => user.id == data);
 	modalTitle.innerText = targetUser.first_name + " " + targetUser.last_name;
 	modalBody.innerHTML = `
     <div class="row p-3">
         <div class="col p-3">
-            <p>id: ${targetUser.id}</p>
-            <p>email: ${targetUser.email}</p>
-            <p>first name: ${targetUser.first_name}</p>
-            <p>last name: ${targetUser.last_name}</p>
+            <p>Id: ${targetUser.id}</p>
+            <p>Email: ${targetUser.email}</p>
+            <p>First Name: ${targetUser.first_name}</p>
+            <p>Last Name: ${targetUser.last_name}</p>
         </div>
         <div class="col"><img src="${targetUser.localImagePlace}" class="card-img-top my-2 rounded-3 text-center col-6 h-75"></img>
     </div>`;
@@ -73,7 +73,7 @@ function searchInUsers(value) {
 	const filteredUsers = users_data.filter((item) => {
 		for (const param of params) {
 			if (param === "avatar") continue;
-			if (String(item[param]).toLowerCase().includes(value.toLowerCase()))
+			if (String(item[param]).toLowerCase().includes(value.trim().toLowerCase()))
 				return true;
 		}
 	});
