@@ -1,14 +1,14 @@
-img{
+img {
     height: 320px;
     margin-top: 500px;
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
 }
 
-#pagesUl{
+#pagesUl {
     display: flex;
-        justify-content: center;
-        align-items: center;
-    /* transform: translate(0,0); */
+    justify-content: center;
+    align-items: center;
 }
