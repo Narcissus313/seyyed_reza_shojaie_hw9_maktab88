@@ -95,6 +95,7 @@ inputSearchbar.addEventListener("keyup", function (e) {
 	inputSearchBarValue = inputSearchbar.value;
 	if (inputSearchBarValue === "") {
 		lastUsers = users_data;
+		currentPage = 1;
 		renderUsersList(lastUsers);
 	}
 	if (e.key === "Enter") searchInUsers(inputSearchBarValue);
