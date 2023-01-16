@@ -1,0 +1,15 @@
+.div-fade-in {
+    width: 500px;
+    height: fit-content;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.div-fade-out {
+    width: 500px;
+    height: fit-content;
+    background-color: darkgray;
+    margin-top: 20px;
+    padding: 10px;
+}
