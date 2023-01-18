@@ -2,21 +2,15 @@
     background-color: #ccc;
 }
 
-.w3-hide {
-    /* transition: max-height 0.2s ease-out; */
-    /* max-height: 0; */
-
-}
-
 .w3-show {
     transition: 0.3s ease-out;
     height: 100px;
     display: block;
+
 }
+
 .w3-hide {
     transition: 0.3s ease-out;
-    /* height: 0; */
-    /* display: none; */
-    /* color: white; */
-    color: transparent;
+    visibility: hidden;
+    font-size: 0;
 }
